@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signin.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+    <title>Pig Bank - Cadastre-se</title>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img src="{{ url_for('static', filename='img/pig.png') }}" alt="Logo">
+            <h1>Pig Bank</h1> 
+        </div>
+    </header>
+    <section class="sign">
+        <div>
+            <form action="">
+                <h2>Cadastro</h2>
+                <h3>Dados Pessoais</h3>
+                <label for="name">Nome completo:</label>
+                <input type="text" id="name" name="name">
+                <label for="birth_date">Data de nascimento:</label>
+                <input type="date" id="birth_date" name="birth_date">
+                <label for="address">Endereço:</label>
+                <input type="text" id="address" name="address">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf">
+                <h3>Dados de Usuário</h3>
+                <label for="username">Nome de usuário:</label>
+                <input type="text" id="username" name="username">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password">
+                <input type="submit" value="Cadastrar">
+            </form>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='img/moedas.jpeg') }}" alt="Imagem cofrinho de porco">
+        </div> 
+    </section>
+    <footer class="footer">
+        <h3>Pig Bank &reg; 2024</h3>
+        <p>criado e feito por Victoria Schweiger</p>
+    </footer>
+</body>
+</html>

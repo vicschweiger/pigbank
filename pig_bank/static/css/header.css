@@ -1,0 +1,14 @@
+.header div {
+    background-color: var(--verde);
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.75rem;
+}
+
+.header h1 {
+    color: var(--branco);
+    font-size: 3rem;
+    font-family: var(--roboto_slab);
+    font-weight: 500;
+    padding-top: 0.5rem;
+}
