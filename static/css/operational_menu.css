@@ -1,0 +1,73 @@
+.operational_menu {
+    background: linear-gradient(180deg, var(--branco), var(--prata));
+    display: flex;
+    flex-direction: column;
+    font-family: var(--roboto_slab);
+    padding: 1.5rem 8rem;
+    gap: 1rem;
+}
+
+.operational_menu h2 {
+    font-family: var(--roboto_slab);
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time_card {
+    display: flex;
+    gap: 1rem;
+}
+
+.board {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button_card {
+    display: flex;
+    gap: 1rem;
+}
+
+.button_card button {
+    border: none;
+    border-radius: 5px;
+    color: var(--branco);
+    background-color: var(--verde);
+    font-size: 2rem;
+    padding: 1.5rem;
+    width: 25%;
+}
+
+.account_card {
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    width: 30%;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.account_card h3{
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+
+.operational_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70%;
+    height: calc(80vh - 120px);
+}
+
+.operational_card p {
+    font-family: var(--roboto_slab);
+    font-weight: 500;
+    font-size: 1.75rem;
+}

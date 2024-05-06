@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" lang="pt-BR"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+    <title>Pig Bank - HOME</title>
+</head>
+<body>
+    <header class="header">
+        <a href="{{ url_for('homepage') }}">
+            <div>
+                <img src="{{ url_for('static', filename='img/pig.png') }}" alt="Logo">
+                <h1>Pig Bank</h1> 
+            </div>
+        </a>
+    </header>
+    <main>
+        <section class="main">
+            <div class="img_home">
+                <img src="{{ url_for('static', filename='img/cofrinho.avif') }}" alt="Imagem cofrinho de porco">
+            </div>
+            <div class="user_menu">
+                <div class="login">
+                    <form action="/operational_menu", method="post">
+                        <h2>Já é nosso cliente? Faça login</h2>
+                        <label for="username">Nome de usuário:</label>
+                        <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" placeholder="Digite sua senha">
+                        <input type="submit" value="Entrar">
+                      </form>
+
+                </div>
+                <div class="create_account">
+                    <h2>Ainda não é nosso cliente?</h2>
+                    <input type="button" value="Cadastre-se aqui!" onclick="window.location.href = '/signin'">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h3>Pig Bank &reg; 2024</h3>
+        <p>criado e feito por Victoria Schweiger</p>
+    </footer>
+</body>
+</html>

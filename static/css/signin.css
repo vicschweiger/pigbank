@@ -1,0 +1,53 @@
+.sign {
+    display: flex;
+    height: 80vh
+}
+
+.sign h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-top: 0.5rem;
+    font-family: var(--roboto_slab);
+}
+
+.sign h3 {
+    font-size: 1.5rem;
+    font-family: var(--roboto_slab);
+    font-weight: 300;
+}
+
+.sign label {
+    color: var(--cinza);
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.sign form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;    
+    width: 50%;
+    padding: 0.75rem 2rem;
+}
+
+.sign form input {
+    border-radius: 5px;
+    height: 1.75rem;
+    padding: 0 0.75rem;
+}
+
+.sign input[type="submit"] {
+    border: none;
+    background-color: var(--verde);
+    color: var(--branco);
+    font-size: 1.5rem;
+    font-weight: 300;
+    height: 2rem;
+    width: 30%;
+    align-self: center;
+}
+
+.sign img {
+    height: 100%;
+    width: 50%;
+}

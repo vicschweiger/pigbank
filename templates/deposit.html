@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" lang="pt-BR"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/operational_menu.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/deposit.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+    <title>Pig Bank - HOME</title>
+</head>
+<body>
+    <header class="header">
+        <a href="{{ url_for('homepage') }}">
+            <div>
+                <img src="{{ url_for('static', filename='img/pig.png') }}" alt="Logo">
+                <h1>Pig Bank</h1> 
+            </div>
+        </a>
+    </header>
+        <main class="operational_menu">
+            <div class="banner">
+                <div class="time_card">
+                    <h2>{{ current_date }}</h2>
+                    <h2>{{ current_time }}</h2>
+                </div>
+                <h2>R$ {{ account['balance'] }},00</h2>
+            </div>
+            <div class="board">
+                <div class="operational_card">
+                    <p>Olá {{ user['name'] }},<br>
+                        o que gostaria de fazer hoje?
+                    </p>
+                    <div class="button_card">
+                        <button>Sacar</button>
+                        <button>Depositar</button>
+                        <button>Extrato</button>
+                        <button>Sair</button>
+                    </div>
+                </div>
+                <div class="account_card">
+                    <h3>Dados da Conta</h3>
+                    <p>Username: {{ user['username'] }}</p>
+                    <p>ID: {{ account['id'] }}</p>
+                    <p>Agência: {{ account['branch'] }}</p>
+                    <p>Saldo: R$ {{ account['balance'] }},00</p>
+                </div>
+            </div>
+        </main>
+    <footer class="footer">
+        <h3>Pig Bank &reg; 2024</h3>
+        <p>criado e feito por Victoria Schweiger</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+.register_done {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh
+}
+
+.register_done p {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-left: 5rem;
+    font-family: var(--roboto_slab);
+}
+
+.register_done img {
+    height: 100%;
+    width: 50%;
+}
+

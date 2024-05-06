@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" lang="pt-BR"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register_done.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+    <title>Pig Bank - Cadastro concluído!</title>
+</head>
+<body>
+    <header class="header">
+        <a href="{{ url_for('homepage') }}">
+            <div>
+                <img src="{{ url_for('static', filename='img/pig.png') }}" alt="Logo">
+                <h1>Pig Bank</h1> 
+            </div>
+        </a>
+        <div>
+            <input type="button" value="Login" onclick="window.location.href='/redirecionar_para_login'">
+        </div>
+    </header>
+    <main class="register_done">
+        <p>Cadastro concluído com sucesso!</p>
+        <img src="{{ url_for('static', filename='img/moedas.jpeg') }}" alt="Imagem cofrinho de porco">
+    </main>
+    <footer class="footer">
+        <h3>Pig Bank &reg; 2024</h3>
+        <p>criado e feito por Victoria Schweiger</p>
+    </footer>
+</body>
+</html>

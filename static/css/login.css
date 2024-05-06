@@ -1,0 +1,52 @@
+.login {
+    display: flex;
+}
+
+.login img {
+    width: 50%;
+}
+
+.login h2 {
+    font-family: var(--roboto_slab);
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.login label {
+    color: var(--cinza);
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    padding: 8rem;
+}
+
+.login input[type="text"] {
+    border-radius: 5px;
+    height: 1.75rem;
+    padding: 0 0.75rem;
+}
+
+.login input[type="password"] {
+    border-radius: 5px;
+    height: 1.75rem;
+    padding: 0 0.75rem;
+}
+
+.login input[type="submit"] {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--verde);
+    color: var(--branco);
+    font-family: var(--roboto_slab);
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    width: 20%;
+    align-self: center;
+}

@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--verde);
+}
+
+.header div {
+    background-color: var(--verde);
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.75rem;
+}
+
+.header h1 {
+    color: var(--branco);
+    font-size: 3rem;
+    font-family: var(--roboto_slab);
+    font-weight: 500;
+    padding-top: 0.5rem;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header input[type="button"] {
+    background-color: var(--branco);
+    color: var(--verde);
+    font-family: var(--roboto_slab);
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+}

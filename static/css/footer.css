@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--verde);
+    color: var(--branco);
+}
+.footer h3 {
+    font-family: var(--roboto_slab);
+    font-size: 2rem;
+    padding: 1rem 0 0.25rem 0;
+}
+
+.footer p {
+    font-weight: 300;
+}

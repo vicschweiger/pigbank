@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" lang="pt-BR"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+    <title>Pig Bank - Login</title>
+</head>
+<body>
+    <header class="header">
+        <a href="{{ url_for('homepage') }}">
+            <div>
+                <img src="{{ url_for('static', filename='img/pig.png') }}" alt="Logo">
+                <h1>Pig Bank</h1> 
+            </div>
+        </a>
+    </header>
+    <main class="login">
+        <form action="/operational_menu" method="post">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" password="password">
+            <input type="submit" value="Entrar">
+        </form>
+        <img src="{{ url_for('static', filename='img/pessoa escrevendo.jpeg') }}" alt="Imagem de pessoa escrevendo à caneta">
+    </main>
+    <footer class="footer">
+        <h3>Pig Bank &reg; 2024</h3>
+        <p>criado e feito por Victoria Schweiger</p>
+    </footer>   
+</body>
+</html>
